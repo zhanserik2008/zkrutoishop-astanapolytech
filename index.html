@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Магазин ZKRutoi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<script src="main.js"></script>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Магазин <span class="brand-strong">ZKRutoi-Shop</span></h1>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home">Главная</a>
+        <a href="#about-us">У нас</a>
+        <a href="#info">Об информация</a>
+        <a href="#" id="btnCatalog">Каталог</a>
+
+<div id="catalog" style="display: none; margin-top: 20px;">
+    <h2>Каталог</h2>
+    <ul>
+        <li><a href="index33333.html" target="_blank">Телефон</a></li>
+        <li><a href="https://www.mechta.kz" target="_blank">Ноутбук</a></li>
+        <li><a href="https://www.citilink.ru" target="_blank">Сағат</a></li>
+        <li><a href="https://www.wildberries.kz" target="_blank">Наушник</a></li>
+    </ul>
+</div>
+
+<script>
+    document.getElementById("btnCatalog").onclick = function() {
+        let cat = document.getElementById("catalog");
+
+        if (cat.style.display === "none") {
+            cat.style.display = "block";   // ашу
+        } else {
+            cat.style.display = "none";    // жабу
+        }
+    }
+</script>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Catalog animation -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <h2>Каталог техникалық тауарлар</h2>
+
+        <!-- animated catalog (horizontal scrolling cards) -->
+        <div id="catalog" class="catalog-wrap" aria-label="Каталог">
+          <div class="catalog-track">
+            <!-- Repeat cards; change content as needed -->
+            <div class="card">
+              <div class="card-img">📷</div>
+              <div class="card-title">Фотоаппарат</div>
+              <div class="card-sub">Sony Беззеркальная камера Alpha 7</div>
+              <a href="healther1.html" target="_blank" rel="noopener">Бетке өту</a>
+            </div>
+
+            <div class="card">
+              <div class="card-img">💻</div>
+              <div class="card-title">Ноутбук</div>
+              <div class="card-sub">HUAWEI Matebook D14</div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">📱</div>
+              <div class="card-title">Смартфон</div>
+              <div class="card-sub">iPhone 17 Pro Max</div>
+              <a href="index33333.html" target="_blank" rel="noopener">Бетке өту</a>
+            </div>
+
+            <div class="card">
+              <div class="card-img">🎧</div>
+              <div class="card-title">Құлаққап</div>
+              <div class="card-sub">Air Pods</div>
+            </div>
+             
+            <div class="card">
+              <div class="card-img">📱</div>
+              <div class="card-title">Смартфон</div>
+              <div class="card-sub">Samsung S25 Ultra</div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">⌚</div>
+              <div class="card-title">Смарт-сағат</div>
+              <div class="card-sub">Samsung Watch 7 Ultra</div>
+            </div>
+
+            <!-- duplicate sequence to create seamless loop -->
+            <div class="card">
+              <div class="card-img">📷</div>
+              <div class="card-title">Фотоаппарат</div>
+              <div class="card-sub">Sony XPro pods</div>
+            </div>
+            <div class="card">
+              <div class="card-img">💻</div>
+              <div class="card-title">Ноутбук</div>
+              <div class="card-sub">Lenovo LOQ Pro</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Second middle: техника туралы -->
+    <section class="info container" id="info">
+      <h3>Техника туралы</h3>
+      <p>
+        Мұнда техникалық тауарлардың сипаттамасы, артықшылықтары және пайдалану туралы қысқаша ақпарат жазылады.
+        Біз сенімді жабдықтар ұсынамыз: фото, ноутбук, смартфон және басқа да гаджеттер.
+      </p>
+    </section>
+     
+    <!-- Third: команда (сол секция class-і өзгеріссіз) -->
+    <section class="team-section" id="team">
+  <div class="container">
+    <h2 class="team-title">Біздің команда</h2>
+
+    <div class="team-container">
+      <div class="member-card">
+        <div class="member-photo">М</div>
+        <div class="member-name">Махмуд</div>
+        <div class="member-role">Team Lead — HTML құрылымы мен Header бөлігі</div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">Ж</div>
+        <div class="member-name">Жансерік</div>
+        <div class="member-role">CSS дизайнер — сайттың стильдері мен түстері</div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">А</div>
+        <div class="member-name">Алмаз</div>
+        <div class="member-role">JS программист — интерактив және функционалдылық</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social">@zkrutoicompany</div>
+      <div class="copyright">Made in Kazakhstan</div>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>
